@@ -1,0 +1,201 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between; /* Alinea el logo/título a la izquierda y el menú a la derecha */
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Contenedor del logo y título */
+.logo-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo con el título */
+}
+
+/* Logo */
+.logo-container img {
+    width: 60px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-right: 15px; /* Espacio entre el logo y el título */
+}
+
+/* Título principal */
+.logo-container h1 {
+    font-size: 24px;
+    color: #487C3C;
+    margin: 0;
+}
+
+/* Menú de navegación */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #487C3C;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sección principal */
+.main-container {
+    text-align: center;
+    padding: 20px;
+
+}
+/* Sección principal con cuadro verde */
+.main-container {
+    background-color: #e0f2e9; /* Verde claro */
+    border: 2px solid #66a35c; /* Borde verde más oscuro */
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 700px; /* Ajusta el ancho del cuadro */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Efecto de sombra */
+}
+
+/* Título dentro del cuadro */
+.main-container h2 {
+    color: #2d6a4f; /* Verde más oscuro */
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+/* Texto dentro del cuadro */
+.main-container p {
+    font-size: 16px;
+    color: #444;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Sección de ingredientes */
+.ingredients {
+    background-color: #f4f4f4;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 5px;
+}
+
+.ingredients h3 {
+    color: #66a35c;
+    font-size: 22px;
+}
+
+.ingredients ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ingredients li {
+    font-size: 16px;
+    color: #444;
+    padding: 5px 0;
+}
+
+/* Sección de procedimiento */
+.procedure {
+    background-color: #fff8e1;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 5px;
+}
+
+.procedure h3 {
+    color: #c09d39;
+    font-size: 22px;
+}
+
+.procedure p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Sección de Enchiladas Verdes */
+.enchiladas {
+    text-align: center; /* Asegura que todo el contenido se centre */
+    padding: 30px;
+}
+
+.enchiladas img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%; /* Ajusta el tamaño para que no sea demasiado grande */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.enchiladas p {
+    max-width: 600px;
+    margin: 10px auto;
+    font-size: 16px;
+    color: #444;
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* Apila el logo y el menú en móviles */
+        text-align: center;
+        padding: 10px;
+    }
+
+    .logo-container {
+        flex-direction: column; /* Apila el logo y el título */
+        text-align: center;
+    }
+
+    .logo-container img {
+        width: 50px; /* Reduce el tamaño del logo en móviles */
+        margin-bottom: 5px; /* Espacio entre logo y título */
+    }
+
+    .logo-container h1 {
+        font-size: 20px; /* Reduce el tamaño del título en móviles */
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: block; /* Hace que los enlaces del menú se apilen */
+        padding: 5px 0;
+        font-size: 14px;
+    }
+
+    .main-container {
+        max-width: 90%; /* Ajusta el ancho del cuadro verde en móviles */
+        padding: 20px;
+    }
+
+    .ingredients, .procedure, .enchiladas {
+        max-width: 90%; /* Reduce el ancho de las secciones en móviles */
+        padding: 15px;
+    }
+
+    .enchiladas img {
+        max-width: 100%; /* Hace que la imagen de enchiladas sea más adaptable */
+    }
+}
